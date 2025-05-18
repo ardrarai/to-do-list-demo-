@@ -1,0 +1,150 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe5ec, #e0c3fc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Main Container */
+  .container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .header h1 {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 28px;
+    color: #ff69b4;
+  }
+  
+  /* Tab Buttons */
+  .task-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    background: none;
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .tab-btn:hover {
+    background-color: #ffb6c1;
+    color: #ff1493;
+  }
+  
+  /* Input Area */
+  .input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #ffd6e7;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  #addTaskButton {
+    padding: 10px 20px;
+    background-color: #ff80ab;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #addTaskButton:hover {
+    background-color: #f06292;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Task Item Styling */
+  .task-list li {
+    background: #ffeef7;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: #bbb;
+    background: #f0f0f0;
+  }
+  
+  .task-list button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff1493;
+    font-size: 20px;
+  }
+  
+  .task-list button:hover {
+    color: #c71585;
+  }
+  
+  /* Hover Effect */
+  .task-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cute To-Do List 🌸</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <img src="assets/todolist.jpeg" alt="Cute Logo" class="logo">
+      <h1>My Cute To-Do List</h1>
+    </header>
+
+    <!-- Tabs for Task Categories -->
+    <nav class="task-tabs">
+      <button class="tab-btn active" id="allTasksTab">All Tasks</button>
+      <button class="tab-btn" id="pendingTasksTab">Pending Tasks</button>
+      <button class="tab-btn" id="completedTasksTab">Completed Tasks</button>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <div class="input-area">
+        <input type="text" id="taskInput" placeholder="✍️ Write your task...">
+        <button id="addTaskButton">➕ Add Task</button>
+      </div>
+
+      <!-- Task Lists -->
+      <ul id="allTasksList" class="task-list"></ul>
+      <ul id="pendingTasksList" class="task-list" style="display:none;"></ul>
+      <ul id="completedTasksList" class="task-list" style="display:none;"></ul>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
